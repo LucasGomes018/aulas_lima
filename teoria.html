@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+
+    <style>
+        /* Seletor Universal
+        *{
+            margin: 0;
+            
+        }*/
+
+        p{
+            /* Seletor de tipo, aplicando em uma tag especifica */
+            color: wheat;
+        }
+
+        /* Sletor de classe */
+        .paragrafo{
+            background-color: grey;
+
+            /* margin: 10px; -- Aplica em todas as margens */
+            /* margin: 10px 40px; -- Aplica nas margens laterais, superior e inferior */
+            /* margin: 10px 20px 30px 40px; Aplica margem top, right, bottom, left */
+            /* margin-left: 50px; */
+            text-align: center;
+        }
+
+        .img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<!-- Aplicando css inline cor de fundo -->
+    <body style="background-color: darkslateblue; color: white">
+        Olá Mundo 😎✌
+        <!-- Titulo de nível 1 ao 6 -->
+        <h1>Desenvolvimento de sistemas</h1>
+        <h2>Cabeçalho de nivel 2</h2>
+        <h3>Cabeçalho de nivel 3</h3>
+        <h4>Cabeçalho de nivel 4</h4>
+        <h5>Cabeçalho de nivel 5</h5>
+        <h6>Cabeçalho de nivel 6</h6>
+
+        <!-- Insere uma linha na horizontal -->
+        <hr>
+        <!-- A tag 'p' insere um novo paragrafo -->
+        <p>Este é um parágrafo
+            <p>Outro parágrafo</p>
+        </p>
+        <hr>
+
+        <!-- A tag 'br' quebra uma linha, ela é uma tag sem fechamento -->
+        <p>Este é um texto muito grande,<br>
+            que eu desejo quebrar a linha</p>
+
+        <!-- Inserindo um link para abrir uma pagina -->
+        <a href="https://www.sesisp.org.br" style="color: aqua;">Pagina do sesi</a> 
+
+            <br>
+
+        <!-- Link com atributo _blank para abrir em outra janela -->
+        <p>
+            <a href="https://www.sp.senai.br" target="_blank" style="color: aqua;">Senai</a> </p>
+
+        <p>
+            <a href="http://127.0.0.1:5500/Exerc%C3%ADcios/exe01.html" style="color: aqua;">Minha primeira pagina</a> </p>
+
+
+        <p>
+            <a href="./Exercícios/atividades.html" style="color: aqua;">Pagina Atividades</a></p>
+
+        <p>
+            <a href="./index.html" style="color: aqua;">Página Index</a></p>
+        <!-- Tag 'img' para adicionar uma imagem, o atributo src é preenchido com o caminho da imagem -->
+        <p>
+            <img src="img/pocoyo_dance.gif"> </p>
+
+        <p>
+            <img src="./img/skull.gif"> </p>
+
+        <p>
+            Paragrafo com caracter &lt;br&gt;</p>
+
+        <p>
+            &reg; &copy; &trade; &euro; &pound;
+             &yen; &cent; &delta; &uarr;</p>
+        
+        <!-- Para inserir emoji use o 
+                hexadecimal do site emojipedia.org 
+                    e o codigo vai depois do &#x -->
+        <p>Inserindo um emoji &#x1F60E &#x270C</p>
+        
+        <!-- Tags para formatação e enfatização de texto -->
+        
+        <b>Texto em negrito</b>
+        
+            <br>
+
+        <strong>Texto importante</strong> 
+        
+            <br>
+
+        <h1><i>H1 Italico</i></h1>
+
+        <em>Texto enfatiazado</em>
+
+            <br>
+
+        <mark>Texto marcado</mark>
+
+        <h3><p>Texto <small>Menó</small></p></h3>
+
+        <del>Texto Excluido</del>
+
+            <br>
+
+        <ins>Texto Inserido</ins>
+
+        <u>Texto Sublinhado</u>
+
+            <br>
+
+        <p>4<sub>2</sub></p>
+
+        <p>3<sup>3</sup></p>
+        
+        <!-- Colocando link em uma imagem -->
+        <p>
+            <a href="https://www.sesisp.org.br" target="_blank"><img src="../img/sesi-logo.jpg" alt=""></a></p>
+    
+        <p style="font-size: 30px;">Videos do Youtube</p>
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/90bAvQqSuyE" title="O Pica-Pau Não Irá se Mover | 2.5 Horas de Episódios Antigos | Pica-Pau em Português" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+
+        <!-- Aplicando css interno -->
+        <p class="paragrafo">
+
+            Logo do Google
+            <img class="img" src="./img/logo-google.png" alt=""></p>
+
+        <hr>
+
+        <!-- Listas Ordenadas -->
+
+        <ol>
+            <li>Acordar</li>
+            <li>Tomar banho</li>
+            <li>Colocar Uniforme</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a excola</li>
+            <li>Ir para a escola no horário</li>
+        </ol>
+
+        <br>
+
+        <!-- Lista ordenada com número romano minusculo -->
+        <ol type="I">
+            <li>Acordar</li>
+            <li>Tomar banho</li>
+            <li>Colocar Uniforme</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a excola</li>
+            <li>Ir para a escola no horário</li>
+        </ol>
+
+        <br>
+
+        <!-- Lista ordenada com letras maiusculas -->
+        <ol type="A">
+            <li>Acordar</li>
+            <li>Tomar banho</li>
+            <li>Colocar Uniforme</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a excola</li>
+            <li>Ir para a escola no horário</li>
+        </ol>
+
+        <br>
+
+        <!-- Listas Não ordenadas -->
+
+        <ul>
+            <li>Carvão</li>
+            <li>Carne</li>
+            <li>Bebidas</li>
+            <li>Arroz</li>
+        </ul>
+
+        <br>
+
+        <!-- Listas dentro de lista -->
+
+        <ul>
+            <li>Churrasco
+                <ul>
+                    <li>Carne
+                        <ul>
+                            <li>Picanha</li>
+                            <li>Cupim</li>
+                            <li>Ponta de Peito</li>
+                        </ul>
+                    </li>
+                    <li>Carvão</li>
+                    <li>Bebidas</li>
+                    <li>Arroz</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <!-- Lista predefinida -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação para conteúdo de um site</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de estilização do site</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação</dd>
+        </dl>
+
+
+    </body>
+</html>
