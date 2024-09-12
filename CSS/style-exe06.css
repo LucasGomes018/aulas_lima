@@ -1,0 +1,60 @@
+/* Seletor Universal
+*{
+    margin: 0;
+                
+}*/
+
+p{
+    /* Seletor de tipo, aplicando em uma tag especifica */
+    color: darkblue;
+}
+
+/* Sletor de classe */
+.paragrafo{
+    background-color: grey;
+
+    /* margin: 10px; -- Aplica em todas as margens */
+    /* margin: 10px 40px; -- Aplica nas margens laterais, superior e inferior */
+    /* margin: 10px 20px 30px 40px; Aplica margem top, right, bottom, left */
+    /* margin-left: 50px; */
+    text-align: center;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-color: whitesmoke; color: black";
+}
+
+.tabela {
+    /* remover os espaços entre as bordas */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.th-cabecalho, .td-celula {
+    /* configura o formado da borda
+    Expessura, tipo de cor */
+    border: 2px solid black;
+    /* Define o espaçamento interno */
+    padding: 5px;
+    text-align: center;
+    color: black;
+    
+}
+
+.th-cabecalho2{
+    background-color: lightblue;
+}
+
+.th-cabecalho3 {
+    background-color: darkorchid;
+}
+
+.td-celula2 {
+    background-color: lightcyan;
+}
+

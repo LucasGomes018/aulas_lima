@@ -1,41 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Principal</title>
 
-    <style>
-        /* Seletor Universal
-        *{
-            margin: 0;
-            
-        }*/
+        <link rel="stylesheet" href="./CSS/styles.css">
 
-        p{
-            /* Seletor de tipo, aplicando em uma tag especifica */
-            color: wheat;
-        }
-
-        /* Sletor de classe */
-        .paragrafo{
-            background-color: grey;
-
-            /* margin: 10px; -- Aplica em todas as margens */
-            /* margin: 10px 40px; -- Aplica nas margens laterais, superior e inferior */
-            /* margin: 10px 20px 30px 40px; Aplica margem top, right, bottom, left */
-            /* margin-left: 50px; */
-            text-align: center;
-        }
-
-        .img{
-            width: 100px;
-            height: 100px;
-        }
-    </style>
-</head>
+        
+    </head>
 <!-- Aplicando css inline cor de fundo -->
-    <body style="background-color: darkslateblue; color: white">
+    <body>
         Olá Mundo 😎✌
         <!-- Titulo de nível 1 ao 6 -->
         <h1>Desenvolvimento de sistemas</h1>
@@ -58,23 +33,23 @@
             que eu desejo quebrar a linha</p>
 
         <!-- Inserindo um link para abrir uma pagina -->
-        <a href="https://www.sesisp.org.br" style="color: aqua;">Pagina do sesi</a> 
+        <a href="https://www.sesisp.org.br" style="color: purple;">Pagina do sesi</a> 
 
             <br>
 
         <!-- Link com atributo _blank para abrir em outra janela -->
         <p>
-            <a href="https://www.sp.senai.br" target="_blank" style="color: aqua;">Senai</a> </p>
+            <a href="https://www.sp.senai.br" target="_blank" style="color: purple;">Senai</a> </p>
 
         <p>
-            <a href="http://127.0.0.1:5500/Exerc%C3%ADcios/exe01.html" style="color: aqua;">Minha primeira pagina</a> </p>
+            <a href="http://127.0.0.1:5500/Exerc%C3%ADcios/exe01.html" style="color: purple;">Minha primeira pagina</a> </p>
 
 
         <p>
-            <a href="./Exercícios/atividades.html" style="color: aqua;">Pagina Atividades</a></p>
+            <a href="./Exercícios/atividades.html" style="color: purple;">Pagina Atividades</a></p>
 
         <p>
-            <a href="./index.html" style="color: aqua;">Página Index</a></p>
+            <a href="./index.html" style="color: purple;">Página Index</a></p>
         <!-- Tag 'img' para adicionar uma imagem, o atributo src é preenchido com o caminho da imagem -->
         <p>
             <img src="img/pocoyo_dance.gif"> </p>
@@ -226,6 +201,76 @@
             <dd>Linguagem de programação</dd>
         </dl>
 
+        <br>
+        <hr>
+
+        <!-- Trabalhando com Tabelas -->
+        <table border="2">
+            <!-- tr cria uma nova linha -->
+             <tr>
+                <!-- th insere uma celula de cabeçalho -->
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <!-- td cria uma nova celula de dados -->
+                 <td>Lucas</td>
+                 <td>16</td>
+                 <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Douglas</td>
+                <td>32</td>
+                <td>Professor</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="tabela">
+            <!-- tag semantica de cabeçalho -->
+            <thead>
+                <tr class="">
+                    <th class="cabecalho th-cabecalho2">Nome</th>
+                    <th class="cabecalho th-cabecalho3">Telefone</th>
+                    <th class="cabecalho th-cabecalho2">Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td-celula">José da Silva</td>
+                    <td class="td-celula">(18)2345-6789</td>
+                    <td class="td-celula">Andradina</td>
+                </tr>
+                <tr>
+                    <td class="td-celula">Maria da Silva</td>
+                    <td class="td-celula">(18)9876-5432</td>
+                    <td class="td-celula">Castilho</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+            <tr>
+                <td>Jão</td>
+                <td>1234567</td>
+                <td>9876543</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Joaquim</td>
+                <td>2541652</td>
+                <td>1458789</td>
+            </tr>
+            <tr>
+                <td>2541525</td>
+                <td>1472586</td>
+            </tr>
+        </table>
 
     </body>
 </html>
