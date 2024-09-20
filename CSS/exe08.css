@@ -4,7 +4,7 @@
     }
     /* Seletor de tipo, aplicando em uma tag */
     p{
-        color: rgb(118, 241, 10);
+        color: rgb(0, 0, 0);
     }
 
     /* Seletor de classe */
@@ -70,7 +70,7 @@
 }
 
 .linha-br{
-    background-color: #000000e7;
+    background-color: #36f40be7;
 }
 
 .linha-br2{
@@ -78,7 +78,8 @@
 }
 
 .formulario{
-    background-color: aquamarine ;
+    background-color: whitesmoke;
+    margin: 0 auto;
 }
 
 .input-nome{
@@ -91,14 +92,14 @@
     opacity: 70%;
 }
 .botao{
-    background-color: rgb(15, 26, 242);
+    background-color: rgb(105, 128, 201);
     border: none;
     border-radius: 5px;
     padding: 6px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
     /* aplica sombra no texto posição x,y,blur,rgba que aplica na posição do ocidente */
-    text-shadow: 11px 1px 4px rgb(0, 255, 13);
+    text-shadow: 11px 1px 4px rgb(114, 112, 230);
 
 
 } 
@@ -112,11 +113,11 @@
     /* zerar as configurações de aparencia  */
     appearance: none;
     background-color: #fff;
-    border: 2px solid #4caf50;
+    border: 2px solid #574caf;
     border-radius: 5px;
 }
 .checar:checked{
-    background-color: #4caf50;
+    background-color: #673fb1;
 }
 .email{
     width: 300px;
@@ -149,7 +150,18 @@ cursor: pointer;
 }
 /* pseudoclasse, quando o estado do obejeto muda ele atribui outras propriedades */
 .radio:checked{
-background-color: rgb(10, 10, 10);
+background-color: rgb(43, 255, 0);
 border-color: #ff0000;
 }
 
+.login{
+    width: 300px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: rgba(180, 76, 237, 0.153);
+}
+
+.cadUsuario {
+    background: rgb(41,43,201);
+    background: linear-gradient(90deg, rgba(41,43,201,1) 0%, rgba(118,42,201,1) 37%, rgba(123,41,201,1) 57%);
+}
