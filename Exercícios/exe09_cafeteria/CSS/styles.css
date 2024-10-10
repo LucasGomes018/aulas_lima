@@ -3,32 +3,27 @@
 *{
     margin: 0;
     padding: 0;
-    /* Assegura que padding e margin sejam incluidos nas dimensões totais do elemento */
+
     box-sizing: border-box;
 }
-
-.logo{
-    font-family: Teko;
-    font-size: 2rem;
-    color: white;
-    
+body{
+    color: floralwhite;
 }
-
 nav{
     max-width: 1120px;
     width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: row;
     background-color: black;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-body{
+.logo{
     color: white;
-    background-color: #1a1a1a;
+    font-family: Teko;
+    font-size: 1.5pc;
 }
 
 .menu{
@@ -36,55 +31,42 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-
 }
 
 li{
     list-style: none;
 }
-
-li > a{
-    color: lightslategray;
+a{
     text-decoration: none;
-    display: inline-block;
 }
-
-
+li >a{
+    color: lightslategrey;
+}
 li > a:hover{
+    color: white;
 
-    color: aliceblue;
 }
-
 .acessar{
-    color: whitesmoke;
+    color: #a45a49;
 }
-
-nav > a{
-    text-decoration: none;
-}
-
-nav > a:hover{
-    color: lightcyan;
-    text-decoration: none;
-}
-
-
 
 .banner-cafe{
     max-width: 1120px;
-    height: 60vh; /* Se tiver vazando retirar este height*/
+    height: 60vh;
     margin: auto;
-
-
 }
 
 .banner-cafe > img{
     width: 100%;
-    box-shadow: 10px 0px 20px  rgba(0,0,0,0.8);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     opacity: 0.7;
 }
 
+body{
+    color: #fff9f9;
+    background-color: black;
+}
 .banner-novidades{
     max-width: 1120px;
     height: 60vh;
@@ -93,24 +75,136 @@ nav > a:hover{
     gap: 6rem;
     display: flex;
     justify-content: space-between;
-
 }
-
 .banner-conteudo{
-    /* Organizamos o conteudo em coluna */
+    /* organizandoo conteudo em coluna */
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
-.banner-imgs{
-    /* Definir largura máxima */
+.banner-img{
+    /* definindo uma largura maxima */
     max-width: 45%;
-    /* Exibir as imagens em 4 colunas */
+    /* exibir as img em 4 colunas */
     column-count: 4;
+
 }
 
-.banner-imgs > figure > img{
+.banner-img > figure > img {
     width: 100%;
     border-radius: 5px;
+}
+
+/* criando Scrool para cards */
+.card-novo{
+    display: flex;
+    overflow: scroll;
+    gap: 3rem;
+    max-width: 1120px;
+    margin: auto;
+}
+
+/* removendo a barra de scrool */
+.card-novo::-webkit-scrollbar {
+    display: none;
+}
+
+.receitas{
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin: auto;
+}
+
+.cabeçalho-card{
+    background-color: #534543;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.card{
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.rodape-card{
+    background-color: #534543;
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button{
+    width: 80px;
+    background-color: #433d3d;
+    color: #f7dc6f;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* mapa */
+
+.mapa{
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+
+    /* aplica um papel de parede para nossa div */
+    background-image: url('../img/mapa.png');
+    background-repeat: no-repeat;
+    /* aplica tamanho da imagem em todo o espaço*/
+    background-size: cover;
+    margin: 20px;
+    position: relative;
+
+}
+
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icone1{
+    top: 40px;
+    left: 100px;
+}
+
+.icone2{
+    top: 100px;
+    left: 220px;
+}
+
+
+.div-hover{
+    /* escondendo a inmagem */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+}
+
+.icone:hover.div-hover{
+    /* mostrando a imagem */
+    display: block;
+    top: 15%;
+    left: 37%;
 }
