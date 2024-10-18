@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
 *{
@@ -15,8 +16,18 @@ header{
     font-family: Tektur;
     background-color: #00114ad2;
     color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
+header, nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+   }
+   
+nav ul li {
+    margin-left: 1rem;
+}
 
 nav{
     max-width: 1120px;
@@ -29,24 +40,24 @@ nav{
 }
 
 img{
-    width: 1000px;
-    height: 950px;
+    width: 100%;
+    height: 700px;
+    opacity: 0.8;
 }
 
 .banner{
-    /* max-width: 1120px;
-    height: 60vh; */
-    margin: auto;
+   /* margin-left: auto;
+   margin-right: auto; */
+   width: 100%;
+   border-radius: 2px;
+   opacity: 0.7;
+   justify-content: center;
 }
 
 .banner > img{
-    max-width: 2000px;
-    height: 100%;
-    
-    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    opacity: 0.7;
-    margin: 20px;
+    width: 1000px;
+   height: 700px;
+   
 }
 
 .logo{
@@ -70,7 +81,7 @@ img{
     flex-direction: row;
     gap: 1.5rem;
     align-items: center;
-    font-size: larger;
+
 }
 
 li{
@@ -95,9 +106,15 @@ nav > a:hover{
 }
 
 main{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     /* align-items: center; */
+    align-items: center;
+}
+
+section{
+    align-items: center;
+    justify-content: center;
 }
 
 table{
@@ -111,16 +128,20 @@ table{
     margin-top: 20px;
 }
 
-.table-titulo{
-    color: darkred;
+.home {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    
 }
 
 .historia{
-    border:  2px solid  black;
+    border:  1.5px solid  black;
     border-radius: 8px;
-   
-    max-width: 400px;
-    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
      /* Define o tamanho do elemento e o espaço entre eles */
     display: flex;
     flex-direction: column;
@@ -180,9 +201,9 @@ table{
 
 .card{
     width: 300px;
-    height: 220px;
+    height: 210px;
     flex: 0 0 auto; /* Evita que os cards encolham ou se ajustem automaticamente */
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.4);
     font-family: Arial, Helvetica, sans-serif;
@@ -269,13 +290,15 @@ main h1{
 }
 
 .caixa {
+    width: 1000px;
     margin-top: 20px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
     border:  2px solid  black;
     border-radius: 8px;
     text-align: center;
-}
+    justify-content: center;
+}    
 
 .img_f{
     margin-top: 20px;
@@ -288,4 +311,57 @@ main h1{
 
 main > div > img{
     display: flex;
+}
+
+
+
+.table-titulo{
+    font-size: 1.5rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+table thead{
+    background-color: #00114ad2;
+    color: aliceblue;
+}
+
+.titulo{
+    margin-top: 40px;
+}
+
+.home{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .img-home{
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.container{
+    width: 100%;
+}
+
+.sobre{
+    width: 1000px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #a4d3e5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-titulo{
+    text-align: center;
 }
