@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* Assegura que padding e margin sejam incluidos nas dimensões totais do elemento */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 241, 250);
+}
+
+header{
+    font-family: Tektur;
+    background-color: #00114ad2;
+    color: white;
+}
+
+
+nav{
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+img{
+    width: 1000px;
+    height: 950px;
+}
+
+.banner{
+    /* max-width: 1120px;
+    height: 60vh; */
+    margin: auto;
+}
+
+.banner > img{
+    max-width: 2000px;
+    height: 100%;
+    
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    opacity: 0.7;
+    margin: 20px;
+}
+
+.logo{
+    font-family: Tektur;
+    font-size: 2rem;
+    color: white;
+}
+/* 
+.cabecalho {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+} */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: larger;
+}
+
+li{
+    list-style: none;
+}
+
+li > a{
+    color: lightslategray;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li > a:hover{
+
+    color: aliceblue;
+}
+
+nav > a:hover{
+    color: lightcyan;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+table{
+    border: 2px solid;
+    max-width: 1120px;
+    height: 585px;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.table-titulo{
+    color: darkred;
+}
+
+.historia{
+    border:  2px solid  black;
+    border-radius: 8px;
+   
+    max-width: 400px;
+    margin: 0 auto;
+     /* Define o tamanho do elemento e o espaço entre eles */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.item{
+    margin: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.titulo {
+    color: rgb(214, 214, 214);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer{
+    background-color: #001450d2;
+    padding: 10px;
+    box-shadow: 0 -3px 4px rgba(2, 0, 48, 0.5);
+    color: white;
+    margin-top: 20px;
+    
+    
+}
+.texto_footer{
+    text-align: center;
+}
+
+.card > footer{
+    background-color: #001450d2;
+    padding: 10px;
+    box-shadow: 0 -3px 4px rgba(2, 0, 48, 0.5);
+    color: white;
+}
+
+.pib{
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.titulo2{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.card{
+    width: 300px;
+    height: 220px;
+    flex: 0 0 auto; /* Evita que os cards encolham ou se ajustem automaticamente */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+    align-items: center;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.cont-card{
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.cabecalho-card{
+    background-color: #001450d2;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rodape-card{
+    background-color: #001450d2;
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 500px;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.imagem-card{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-card > img{
+    max-width: 100%; /* Mantem o limite maximo do tamanho do container */
+    height: 150px; /* Mantem a proporção da imagem */
+}
+
+.titulo-card{
+    text-align: center;
+}
+.subtitulo-card{
+    color: rgb(252, 252, 252);
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+mark {
+    background-color: #ddd;
+}
+
+main h1{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa {
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border:  2px solid  black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.img_f{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    
+}
+
+main > div > img{
+    display: flex;
+}
