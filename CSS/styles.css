@@ -153,3 +153,6 @@ background-color: rgb(10, 10, 10);
 border-color: #ff0000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
