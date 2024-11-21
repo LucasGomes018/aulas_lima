@@ -156,3 +156,7 @@ border-color: #ff0000;
 html{
     scroll-behavior: smooth;
 }
+
+.link-nav{
+    color: white !important;
+}
